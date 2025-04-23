@@ -1,0 +1,148 @@
+.edit-story-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .edit-content {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 20px;
+  }
+  
+  .edit-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .error-message {
+    background-color: #ffebee;
+    color: #d32f2f;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="date"],
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .form-group input[type="text"]:focus,
+  .form-group input[type="date"]:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #2196F3;
+    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.2);
+  }
+  
+  .form-group.checkbox {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-group.checkbox input {
+    margin-right: 10px;
+  }
+  
+  .form-group.checkbox label {
+    margin-bottom: 0;
+  }
+  
+  .image-input {
+    margin-bottom: 30px;
+  }
+  
+  .image-preview {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 400px;
+  }
+  
+  .image-preview img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .image-hint {
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .cancel-button,
+  .submit-button {
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .cancel-button {
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+  }
+  
+  .cancel-button:hover {
+    background-color: #bdbdbd;
+  }
+  
+  .submit-button {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+  }
+  
+  .submit-button:hover {
+    background-color: #1976D2;
+  }
+  
+  .submit-button:disabled {
+    background-color: #90caf9;
+    cursor: not-allowed;
+  }
+  
+  @media (max-width: 768px) {
+    .edit-content {
+      padding: 20px;
+    }
+    
+    .form-actions {
+      flex-direction: column;
+    }
+    
+    .cancel-button,
+    .submit-button {
+      width: 100%;
+    }
+  }
